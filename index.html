@@ -104,9 +104,11 @@ happyVDayNish.style.fontWeight = 'bold';
 happyVDayNish.style.fontStyle = 'italic';
 document.body.appendChild(happyVDayNish);
 
+// opacity stuff is from https://www.w3schools.com/css/css_image_transparency.asp
 function poemStyle(poemElement) {
-    poemElement.style.textAlign = 'left';
-    poemElement.style.color = '#63eaff';
+    poemElement.style.textAlign = 'center';
+    // poemElement.style.color = '#63eaff';
+    poemElement.style.color = 'black';
     poemElement.style.marginTop = '50px';
     poemElement.style.marginLeft = '20px';
     // make the text normal sized
@@ -120,11 +122,8 @@ function poemStyle(poemElement) {
 
 var poem1 = document.createElement('div');
 poemStyle(poem1);
+poem1.innerHTML = 'This is a very special day<br>' + 'A time where love for Nish is conveyed<br>' + 'So please enjoy a cute photo or two<br>' + 'Or more! While I elaborate on a why I love you :)<br>';
 document.body.appendChild(poem1);
-poem1p = document.createElement('p');
-poem1p.innerHTML = 'This is a very special day<br>' + 'A time where love for Nish is conveyed<br>' + 'So please enjoy a cute photo or two<br>' + 'Or more! While I elaborate on a why I love you :)<br>';
-poem1.appendChild(poem1p);
-
 
 var poem2 = document.createElement('div');
 poemStyle(poem2);
@@ -148,7 +147,7 @@ document.body.appendChild(poem5);
 
 var poem6 = document.createElement('div');
 poemStyle(poem6);
-poem6.innerHTML = "I love you so much and with all of my heart<br>I'm so glat that we're close even when we're apart<br>";
+poem6.innerHTML = "I love you so much and with all of my heart<br>I'm so glad that we're close even when we're apart<br>";
 document.body.appendChild(poem6);
 
 var poem7 = document.createElement('div');
