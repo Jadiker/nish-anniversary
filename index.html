@@ -77,6 +77,39 @@ bottomText.style.textAlign = 'center';
 bottomText.style.fontSize = '20px';
 document.body.appendChild(bottomText);
 
+var happyVDayNish = document.createElement('div');
+happyVDayNish.style.textAlign = 'center';
+happyVDayNish.style.color = 'purple';
+happyVDayNish.style.marginTop = '100px';
+happyVDayNish.innerHTML = 'Happy Valentine\'s Day!';
+// make the text much bigger
+happyVDayNish.style.fontSize = '100px';
+// make the text bold
+happyVDayNish.style.fontWeight = 'bold';
+// make the text italic
+happyVDayNish.style.fontStyle = 'italic';
+document.body.appendChild(happyVDayNish);
+
+function poemStyle(poemElement) {
+    poemElement.style.textAlign = 'left';
+    poemElement.style.color = '#63eaff';
+    poemElement.style.marginTop = '50px';
+    poemElement.style.marginLeft = '20px';
+    // make the text normal sized
+    poem1.style.fontSize = '50px';
+    // make the text bold
+    poem1.style.fontWeight = 'bold';
+    // make the text italic
+    poem1.style.fontStyle = 'italic';
+}
+
+var poem1 = document.createElement('div');
+poemStyle(poem1);
+poem1.innerHTML = 'This is a very special day<br>' +'A time where love for Nish is conveyed<br>' + 'So please enjoy a cute photo or two<br>' + 'Or more! While I elaborate on a why I love you :)<br>';
+document.body.appendChild(poem1);
+
+
+
 // Add space on the bottom to push down the OpenAI bottom banner
 for (var i = 0; i < 6; i++) {
     document.body.appendChild(document.createElement('br'));
