@@ -1,8 +1,22 @@
 
 <html>
+    <style>
+    div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+      }
+      
+      div.transbox p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+      }
+    </style>
     <head>
         <script>
-        document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 
 var loveYouNish = document.createElement('div');
 loveYouNish.style.textAlign = 'center';
@@ -96,18 +110,51 @@ function poemStyle(poemElement) {
     poemElement.style.marginTop = '50px';
     poemElement.style.marginLeft = '20px';
     // make the text normal sized
-    poem1.style.fontSize = '50px';
+    poemElement.style.fontSize = '50px';
     // make the text bold
-    poem1.style.fontWeight = 'bold';
+    poemElement.style.fontWeight = 'bold';
     // make the text italic
-    poem1.style.fontStyle = 'italic';
+    poemElement.style.fontStyle = 'italic';
+    poemElement.className = 'transbox';
 }
 
 var poem1 = document.createElement('div');
 poemStyle(poem1);
-poem1.innerHTML = 'This is a very special day<br>' +'A time where love for Nish is conveyed<br>' + 'So please enjoy a cute photo or two<br>' + 'Or more! While I elaborate on a why I love you :)<br>';
 document.body.appendChild(poem1);
+poem1p = document.createElement('p');
+poem1p.innerHTML = 'This is a very special day<br>' + 'A time where love for Nish is conveyed<br>' + 'So please enjoy a cute photo or two<br>' + 'Or more! While I elaborate on a why I love you :)<br>';
+poem1.appendChild(poem1p);
 
+
+var poem2 = document.createElement('div');
+poemStyle(poem2);
+poem2.innerHTML = 'As you are aware,<br>I\'m impressed by your chest<br>\'Cause it holds a heart<br>That makes the world feel blessed<br>';
+document.body.appendChild(poem2);
+
+var poem3 = document.createElement('div');
+poemStyle(poem3);
+poem3.innerHTML = 'Your lips form a smile<br>That light up my life<br>Your giggle and laugh<br>Make my day and my night<br>';
+document.body.appendChild(poem3);
+
+var poem4 = document.createElement('div');
+poemStyle(poem4);
+poem4.innerHTML = "Your head makes me feel<br>A certain kinda way<br>You're so creative, inquisitive, thoughtful, and brilliant<br>That's it's hard not to talk to you for the whole entire day<br>";
+document.body.appendChild(poem4);
+
+var poem5 = document.createElement('div');
+poemStyle(poem5);
+poem5.innerHTML = "Your feet help us climb up<br>To brand new heights<br>We tippy-toe (A-man-da tho!) to new zones<br>With your bravery, strength, and might<br>";
+document.body.appendChild(poem5);
+
+var poem6 = document.createElement('div');
+poemStyle(poem6);
+poem6.innerHTML = "I love you so much and with all of my heart<br>I'm so glat that we're close even when we're apart<br>";
+document.body.appendChild(poem6);
+
+var poem7 = document.createElement('div');
+poemStyle(poem7);
+poem7.innerHTML = "Love you! Happy Valentine's Day!<br>";
+document.body.appendChild(poem7);
 
 
 // Add space on the bottom to push down the OpenAI bottom banner
