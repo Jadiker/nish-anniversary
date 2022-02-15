@@ -106,7 +106,7 @@ document.body.appendChild(happyVDayNish);
 
 // add in the rose image, centered
 var rose = document.createElement('img');
-rose.src = 'NewPhotos/IMG_0016.jpg';
+rose.src = 'NewPhotos/IMG_0016.JPG';
 rose.style.width = '20vw';
 rose.style.marginTop = '100px';
 // center it
@@ -131,7 +131,7 @@ firstSushiPhoto.style.width = '20vw';
 
 // photo
 var beachHeartPhoto = document.createElement('img');
-beachHeartPhoto.src = 'NewPhotos/IMG_0863.jpg';
+beachHeartPhoto.src = 'NewPhotos/IMG_0863.JPG';
 beachHeartPhoto.style.width = '20vw';
 // beachHeartPhoto.style.marginTop = '100px';
 // // center it
@@ -240,6 +240,20 @@ var nishDancePhoto = document.createElement('img');
 nishDancePhoto.src = 'NewPhotos/IMG_4568.JPEG';
 nishDancePhoto.style.width = '20vw';
 
+// photo
+var tongueOutPhoto = document.createElement('img');
+tongueOutPhoto.src = 'NewPhotos/IMG_4552.JPEG';
+tongueOutPhoto.style.width = '20vw';
+
+// photo
+var outsideSillyPhoto = document.createElement('img');
+outsideSillyPhoto.src = 'NewPhotos/IMG_2954.JPEG';
+outsideSillyPhoto.style.width = '20vw';
+
+// photo
+var backridePhoto = document.createElement('img');
+backridePhoto.src = 'NewPhotos/IMG_5573.JPEG';
+backridePhoto.style.width = '20vw';
 
 // opacity stuff is from https://www.w3schools.com/css/css_image_transparency.asp
 function poemStyle(poemElement) {
@@ -345,6 +359,15 @@ var poem7 = document.createElement('div');
 poemStyle(poem7);
 poem7.innerHTML = "Love you! Happy Valentine's Day!<br>";
 document.body.appendChild(poem7);
+
+var poemRow7 = document.createElement('div');
+poemRow7.className = 'row';
+poemRow7.appendChild(tongueOutPhoto);
+poemRow7.appendChild(outsideSillyPhoto);
+poemRow7.appendChild(backridePhoto);
+// center the row
+tongueOutPhoto.style.marginLeft = '20vw';
+document.body.appendChild(poemRow7);
 
 
 // Add space on the bottom to push down the OpenAI bottom banner
