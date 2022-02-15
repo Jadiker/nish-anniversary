@@ -114,9 +114,9 @@ rose.style.marginLeft = '40vw';
 document.body.appendChild(rose);
 
 // beach photo
-var beachPhoto = document.createElement('img');
-beachPhoto.src = 'NewPhotos/IMG_0754.jpg';
-beachPhoto.style.width = '20vw';
+var beachStrengthPhoto = document.createElement('img');
+beachStrengthPhoto.src = 'NewPhotos/IMG_0754.jpg';
+beachStrengthPhoto.style.width = '20vw';
 // beachPhoto.style.marginTop = '100px';
 // // center it
 // beachPhoto.style.marginLeft = '40vw';
@@ -158,17 +158,12 @@ willPhoto.style.width = '40vw';
 // photo
 var waterfallPhoto = document.createElement('img');
 waterfallPhoto.src = 'NewPhotos/IMG_2964.JPEG';
-waterfallPhoto.style.width = '40vw';
+waterfallPhoto.style.width = '20vw';
 
 // photo
 var bludMouthModelPhoto = document.createElement('img');
 bludMouthModelPhoto.src = 'NewPhotos/IMG_3122.JPEG';
 bludMouthModelPhoto.style.width = '20vw';
-
-// photo
-var nishDanceMask = document.createElement('img');
-nishDanceMask.src = 'NewPhotos/IMG_4568.JPEG';
-nishDanceMask.style.width = '20vw';
 
 // photo
 var nishReachingPhoto = document.createElement('img');
@@ -181,14 +176,69 @@ fieldSillyPhoto.src = 'NewPhotos/IMG_5573.JPEG';
 fieldSillyPhoto.style.width = '20vw';
 
 // photo
-var superCute = document.createElement('img');
-superCute.src = 'NewPhotos/IMG_5591.JPEG';
-superCute.style.width = '20vw';
+var superCutePhoto = document.createElement('img');
+superCutePhoto.src = 'NewPhotos/IMG_5591.JPEG';
+superCutePhoto.style.width = '20vw';
 
 // photo
 var nishPortraitPhoto = document.createElement('img');
-nishPortraitPhoto.src = 'NewPhotos/IMG_5591.JPEG';
+nishPortraitPhoto.src = 'NewPhotos/IMG_5540.JPEG';
 nishPortraitPhoto.style.width = '20vw';
+
+// photo
+var halloweenPhoto = document.createElement('img');
+halloweenPhoto.src = 'NewPhotos/IMG_4489.JPEG';
+halloweenPhoto.style.width = '20vw';
+
+// photo
+var formalFridayPhoto = document.createElement('img');
+formalFridayPhoto.src = 'NewPhotos/IMG_4633.JPEG';
+formalFridayPhoto.style.width = '20vw';
+
+// photo
+var matchingShirtsPhoto = document.createElement('img');
+matchingShirtsPhoto.src = 'NewPhotos/IMG_0192.JPG';
+matchingShirtsPhoto.style.width = '20vw';
+
+// photo
+var virtualPhoto1 = document.createElement('img');
+virtualPhoto1.src = 'NewPhotos/IMG_5128.PNG';
+virtualPhoto1.style.width = '20vw';
+
+// photo
+var virtualPhoto2 = document.createElement('img');
+virtualPhoto2.src = 'NewPhotos/IMG_6078.PNG';
+virtualPhoto2.style.width = '40vw';
+
+// photo
+var virtualPhoto3 = document.createElement('img');
+virtualPhoto3.src = 'NewPhotos/IMG_6202.PNG';
+virtualPhoto3.style.width = '10vw';
+
+// photo
+var archPhoto = document.createElement('img');
+archPhoto.src = 'NewPhotos/IMG_1728.JPG';
+archPhoto.style.width = '40vw';
+
+// photo
+var formalNishDinnerPhoto = document.createElement('img');
+formalNishDinnerPhoto.src = 'NewPhotos/IMG_1684.JPG';
+formalNishDinnerPhoto.style.width = '15vw';
+
+// photo
+var outsideHugPhoto = document.createElement('img');
+outsideHugPhoto.src = 'NewPhotos/IMG_0220.JPG';
+outsideHugPhoto.style.width = '40vw';
+
+// photo
+var nishOutsidePhoto = document.createElement('img');
+nishOutsidePhoto.src = 'NewPhotos/IMG_3524.JPEG';
+nishOutsidePhoto.style.width = '20vw';
+
+// photo
+var nishDancePhoto = document.createElement('img');
+nishDancePhoto.src = 'NewPhotos/IMG_4568.JPEG';
+nishDancePhoto.style.width = '20vw';
 
 
 // opacity stuff is from https://www.w3schools.com/css/css_image_transparency.asp
@@ -212,6 +262,15 @@ poemStyle(poem1);
 poem1.innerHTML = 'This is a very special day<br>' + 'A time where love for Nish is conveyed<br>' + 'So please enjoy a cute photo or two<br>' + 'Or more! While I elaborate on a why I love you :)<br>';
 document.body.appendChild(poem1);
 
+var poemRow2 = document.createElement('div');
+poemRow2.className = 'row';
+poemRow2.appendChild(nishDancePhoto);
+poemRow2.appendChild(superCutePhoto);
+poemRow2.appendChild(nishOutsidePhoto);
+// center the row
+nishDancePhoto.style.marginLeft = '20vw';
+document.body.appendChild(poemRow2);
+
 var poem2 = document.createElement('div');
 poemStyle(poem2);
 poem2.innerHTML = 'As you are aware,<br>I\'m impressed by your chest<br>\'Cause it holds a heart<br>That makes the world feel blessed<br>';
@@ -220,7 +279,7 @@ document.body.appendChild(poem2);
 var poemRow2 = document.createElement('div');
 poemRow2.className = 'row';
 poemRow2.appendChild(firstSushiPhoto);
-poemRow2.appendChild(beachPhoto);
+poemRow2.appendChild(halloweenPhoto);
 poemRow2.appendChild(beachHeartPhoto);
 // center the row
 firstSushiPhoto.style.marginLeft = '20vw';
@@ -245,15 +304,42 @@ poemStyle(poem4);
 poem4.innerHTML = "Your head makes me feel<br>A certain kinda way<br>You're so creative, inquisitive, thoughtful, and brilliant<br>That's it's hard not to talk to you for the whole entire day<br>";
 document.body.appendChild(poem4);
 
+var poemRow5 = document.createElement('div');
+poemRow5.className = 'row';
+poemRow5.appendChild(matchingShirtsPhoto);
+poemRow5.appendChild(archPhoto);
+poemRow5.appendChild(formalNishDinnerPhoto);
+// center the row
+matchingShirtsPhoto.style.marginLeft = '12.5vw';
+document.body.appendChild(poemRow5);
+
 var poem5 = document.createElement('div');
 poemStyle(poem5);
 poem5.innerHTML = "Your feet help us climb up<br>To brand new heights<br>We tippy-toe (A-man-da tho!) to new zones<br>With your bravery, strength, and might<br>";
 document.body.appendChild(poem5);
 
+var poemRow5 = document.createElement('div');
+poemRow5.className = 'row';
+poemRow5.appendChild(waterfallPhoto);
+poemRow5.appendChild(beachStrengthPhoto);
+poemRow5.appendChild(formalFridayPhoto);
+// center the row
+waterfallPhoto.style.marginLeft = '20vw';
+document.body.appendChild(poemRow5);
+
 var poem6 = document.createElement('div');
 poemStyle(poem6);
 poem6.innerHTML = "I love you so much and with all of my heart<br>I'm so glad that we're close even when we're apart<br>";
 document.body.appendChild(poem6);
+
+var poemRow6 = document.createElement('div');
+poemRow6.className = 'row';
+poemRow6.appendChild(virtualPhoto2);
+poemRow6.appendChild(virtualPhoto1);
+poemRow6.appendChild(virtualPhoto3);
+// center the row
+virtualPhoto2.style.marginLeft = '15vw';
+document.body.appendChild(poemRow6);
 
 var poem7 = document.createElement('div');
 poemStyle(poem7);
