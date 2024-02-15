@@ -66,7 +66,7 @@ var button = document.createElement('button');
 button.innerHTML = 'Guess what? (Click me)';
 document.body.appendChild(button);
 button.addEventListener('click', function() {
-  var possibleResponses = ["I love you <3", "Chicken butt!", "Chicken poo!", "Happy anniversary!"];
+  var possibleResponses = ["I love you! <3", "Chicken Butt!", "Chicken Poo!", "Happy Valentine's Day!", "You got this!"];
 
   var textContents = "";
   for (i = 0; i < possibleResponses.length; i++) {
@@ -86,7 +86,7 @@ button.style.display = 'block';
 button.style.fontSize = '3em';
 
 var bottomText = document.createElement('div');
-bottomText.innerHTML = "There are 4 messages to find :)"
+bottomText.innerHTML = "There are 5 messages to find :)"
 bottomText.style.textAlign = 'center';
 bottomText.style.fontSize = '20px';
 document.body.appendChild(bottomText);
@@ -246,13 +246,49 @@ tongueOutPhoto.style.width = '20vw';
 
 // photo
 var outsideSillyPhoto = document.createElement('img');
-outsideSillyPhoto.src = 'NewPhotos/IMG_2954.JPEG';
+outsideSillyPhoto.src = 'NewPhotos/IMG_5573.JPEG';
 outsideSillyPhoto.style.width = '20vw';
 
 // photo
 var backridePhoto = document.createElement('img');
-backridePhoto.src = 'NewPhotos/IMG_5573.JPEG';
+backridePhoto.src = 'NewPhotos/IMG_2954.JPEG';
 backridePhoto.style.width = '20vw';
+
+//photo
+// to replace arch photo
+var caliSunsetPhoto = document.createElement('img');
+caliSunsetPhoto.src = 'Val24/sunset.jpg';
+caliSunsetPhoto.style.width = '40vw';
+
+//photo
+// to replace virtual photo 3
+var virtualFlowerDress = document.createElement('img');
+virtualFlowerDress.src = 'Val24/virtualflowerdress.jpg';
+virtualFlowerDress.style.width = '10vw';
+
+//photo
+// to replace beach strength photo
+var promPhoto = document.createElement('img');
+promPhoto.src = 'Val24/prom.jpg';
+promPhoto.style.width = '20vw';
+
+//photo
+// to replace beach heart photo
+var harvardFlowersPhoto = document.createElement('img');
+harvardFlowersPhoto.src = 'Val24/harvardflowers.jpg';
+harvardFlowersPhoto.style.width = '30vw';
+
+//photo
+// to replace nish portrait photo
+var texasPhoto = document.createElement('img');
+texasPhoto.src = 'Val24/texas.jpg';
+texasPhoto.style.width = '20vw';
+
+//photo
+// to replace backride photo
+var barbiePhoto = document.createElement('img');
+barbiePhoto.src = 'Val24/barbie.jpg';
+barbiePhoto.style.width = '20vw';
 
 // opacity stuff is from https://www.w3schools.com/css/css_image_transparency.asp
 function poemStyle(poemElement) {
@@ -292,10 +328,12 @@ document.body.appendChild(poem2);
 var poemRow2 = document.createElement('div');
 poemRow2.className = 'row';
 poemRow2.appendChild(firstSushiPhoto);
+poemRow2.appendChild(harvardFlowersPhoto);
 poemRow2.appendChild(halloweenPhoto);
-poemRow2.appendChild(beachHeartPhoto);
+// poemRow2.appendChild(beachHeartPhoto);
+
 // center the row
-firstSushiPhoto.style.marginLeft = '20vw';
+firstSushiPhoto.style.marginLeft = '15vw';
 document.body.appendChild(poemRow2);
 
 var poem3 = document.createElement('div');
@@ -305,11 +343,12 @@ document.body.appendChild(poem3);
 
 var poemRow3 = document.createElement('div');
 poemRow3.className = 'row';
-poemRow3.appendChild(nishPortraitPhoto);
+// poemRow3.appendChild(nishPortraitPhoto);
+poemRow3.appendChild(texasPhoto);
 poemRow3.appendChild(nishReachingPhoto);
 poemRow3.appendChild(winePhoto);
 // center the row
-nishPortraitPhoto.style.marginLeft = '15vw';
+texasPhoto.style.marginLeft = '15vw';
 document.body.appendChild(poemRow3);
 
 var poem4 = document.createElement('div');
@@ -320,7 +359,8 @@ document.body.appendChild(poem4);
 var poemRow5 = document.createElement('div');
 poemRow5.className = 'row';
 poemRow5.appendChild(matchingShirtsPhoto);
-poemRow5.appendChild(archPhoto);
+// poemRow5.appendChild(archPhoto);
+poemRow5.appendChild(caliSunsetPhoto);
 poemRow5.appendChild(formalNishDinnerPhoto);
 // center the row
 matchingShirtsPhoto.style.marginLeft = '12.5vw';
@@ -334,7 +374,8 @@ document.body.appendChild(poem5);
 var poemRow5 = document.createElement('div');
 poemRow5.className = 'row';
 poemRow5.appendChild(waterfallPhoto);
-poemRow5.appendChild(beachStrengthPhoto);
+// poemRow5.appendChild(beachStrengthPhoto);
+poemRow5.appendChild(promPhoto);
 poemRow5.appendChild(formalFridayPhoto);
 // center the row
 waterfallPhoto.style.marginLeft = '20vw';
@@ -349,7 +390,9 @@ var poemRow6 = document.createElement('div');
 poemRow6.className = 'row';
 poemRow6.appendChild(virtualPhoto2);
 poemRow6.appendChild(virtualPhoto1);
-poemRow6.appendChild(virtualPhoto3);
+// poemRow6.appendChild(virtualPhoto3);
+poemRow6.appendChild(virtualFlowerDress);
+
 // center the row
 virtualPhoto2.style.marginLeft = '15vw';
 document.body.appendChild(poemRow6);
@@ -362,8 +405,9 @@ document.body.appendChild(poem7);
 var poemRow7 = document.createElement('div');
 poemRow7.className = 'row';
 poemRow7.appendChild(tongueOutPhoto);
+poemRow7.appendChild(barbiePhoto);
 poemRow7.appendChild(outsideSillyPhoto);
-poemRow7.appendChild(backridePhoto);
+// poemRow7.appendChild(backridePhoto);
 // center the row
 tongueOutPhoto.style.marginLeft = '20vw';
 document.body.appendChild(poemRow7);
@@ -376,15 +420,6 @@ for (var i = 0; i < 6; i++) {
 
 
 });
-        </script>
-    </head>
-    <body style="margin: 0;">
-        <div style="background-color: black; position: fixed; bottom: 0; width: 100%; height: 20px; padding: 20px; opacity: .85; z-index: 1000;">
-            <svg id="Layer_1" data-name="Layer 1" height="40px" width="40px" style="top: -8px;
-            position: relative;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><defs><style>.cls-1{fill:#fff;}</style></defs><title>openai-symbol-flat-white</title><path class="cls-1" d="M617.24,354a126.36,126.36,0,0,0-10.86-103.79,127.8,127.8,0,0,0-137.65-61.32,126.36,126.36,0,0,0-95.31-42.49A127.81,127.81,0,0,0,251.5,234.89,126.4,126.4,0,0,0,167,296.19a127.82,127.82,0,0,0,15.72,149.86,126.36,126.36,0,0,0,10.86,103.79,127.81,127.81,0,0,0,137.65,61.32,126.36,126.36,0,0,0,95.31,42.49A127.81,127.81,0,0,0,548.5,565.11,126.4,126.4,0,0,0,633,503.81,127.82,127.82,0,0,0,617.24,354ZM426.58,620.49a94.79,94.79,0,0,1-60.85-22c.77-.42,2.12-1.16,3-1.7l101-58.34a16.42,16.42,0,0,0,8.3-14.37V381.69l42.69,24.65a1.52,1.52,0,0,1,.83,1.17V525.43A95.18,95.18,0,0,1,426.58,620.49ZM222.34,533.26A94.74,94.74,0,0,1,211,469.56c.75.45,2.06,1.25,3,1.79l101,58.34a16.44,16.44,0,0,0,16.59,0l123.31-71.2v49.3a1.53,1.53,0,0,1-.61,1.31L352.19,568.05A95.16,95.16,0,0,1,222.34,533.26ZM195.77,312.77a94.71,94.71,0,0,1,49.48-41.68c0,.87-.05,2.41-.05,3.48V391.25a16.41,16.41,0,0,0,8.29,14.36L376.8,476.8l-42.69,24.65a1.53,1.53,0,0,1-1.44.13l-102.11-59A95.16,95.16,0,0,1,195.77,312.77Zm350.74,81.62L423.2,323.19l42.69-24.64a1.53,1.53,0,0,1,1.44-.13l102.11,58.95a95.08,95.08,0,0,1-14.69,171.55c0-.88,0-2.42,0-3.49V408.75A16.4,16.4,0,0,0,546.51,394.39ZM589,330.44c-.75-.46-2.06-1.25-3-1.79L485,270.31a16.46,16.46,0,0,0-16.59,0l-123.31,71.2v-49.3a1.53,1.53,0,0,1,.61-1.31L447.81,232A95.07,95.07,0,0,1,589,330.44ZM321.89,418.31l-42.7-24.65a1.52,1.52,0,0,1-.83-1.17V274.57a95.07,95.07,0,0,1,155.9-73c-.77.42-2.11,1.16-3,1.7l-101,58.34a16.41,16.41,0,0,0-8.3,14.36Zm23.19-50L400,336.59l54.92,31.7v63.42L400,463.41l-54.92-31.7Z"/></svg>
-            <div style="display: inline-block; color: white; vertical-align: top; margin-top: 4px; font-family: Helvetica, sans-serif;">
-                Site created with help from <a style="color: white; text-decoration: none; font-weight: bold;" href="https://openai.com/blog/openai-codex/">OpenAI Codex</a>
-            </div>
-        </div>
-    </body>
+</script>
+</head>
 </html>
